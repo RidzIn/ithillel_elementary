@@ -1,0 +1,13 @@
+Я использовал Мавен как инструмент сборки. 
+Плагин использовал Apache Maven Shade Plugin
+
+Команды для запуска 
+
+1) mvn package
+ jar xf send-run.jar
+ jar xf recv-run.jar
+
+ java -jar recv-run.jar - для запуска recv
+ java -jar send-run.jar - для запуска send
+
+

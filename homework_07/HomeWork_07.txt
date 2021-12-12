@@ -1,0 +1,31 @@
+задание 1
+git commit 
+git commit
+задание 2
+git checkout -b bugFix
+задание 3
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git merge bugFix
+задание 4
+git chackout -b bugFix
+git commit
+git checkout main
+git commit
+git checkout bugFix
+git rebase main
+задание 5
+git checkout C4
+задание 6
+git checkout bugFix^
+задание 7
+git branch -f main C6
+git branch -f bugFix C0
+git checkout C1
+задание 8 
+git reset local~1
+git checkout pushed
+git revert pushed
+
