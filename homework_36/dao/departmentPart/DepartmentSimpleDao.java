@@ -1,4 +1,4 @@
-package ua.ithillel.dao;
+package ua.ithillel.dao.departmentPart;
 
 import ua.ithillel.model.Department;
 

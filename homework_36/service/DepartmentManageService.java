@@ -1,7 +1,7 @@
 package ua.ithillel.service;
 
-import ua.ithillel.dao.DepartmentDao;
-import ua.ithillel.dao.DepartmentSimpleDao;
+import ua.ithillel.dao.departmentPart.DepartmentDao;
+import ua.ithillel.dao.departmentPart.DepartmentSimpleDao;
 import ua.ithillel.model.Department;
 
 import java.util.List;

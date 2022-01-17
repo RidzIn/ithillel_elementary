@@ -1,17 +1,17 @@
 package ua.ithillel.service;
 
-import ua.ithillel.dao.EmployeeDao;
-import ua.ithillel.dao.EmployeeSimpleDao;
+import ua.ithillel.dao.employeePart.EmployeeDao;
+import ua.ithillel.dao.employeePart.EmployeeSingleton;
 import ua.ithillel.model.Employee;
 
 import java.util.List;
 
 public class EmployeeManageService {
 
-    private EmployeeDao employeeDao = new EmployeeSimpleDao();
+    private final EmployeeDao employeeDao = EmployeeSingleton.getInstance().getEmployeeDao();
+    private final RandomHTTPService randomHttpService = new RandomHTTPService();
 
     public Long add(Employee employee) {
-        // do some work
         return employeeDao.addEmployee(employee);
     }
 
@@ -28,7 +28,6 @@ public class EmployeeManageService {
     }
 
     public List<Employee> findAll() {
-
         return employeeDao.findEmployees();
     }
 }
